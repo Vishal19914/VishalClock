@@ -17,3 +17,4 @@
    - 'us-central1'
    - '--platform'
    - 'managed'
+   - '--allow-unauthenticated'
