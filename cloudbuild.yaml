@@ -1,7 +1,7 @@
  steps:
  # build the container image
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'gcr.io/ind-coe/slbclock11-vishal: $COMMIT_SHA','.']
+   args: ['build', '--tag', 'gcr.io/ind-coe/slbclock11-vishal: $COMMIT_SHA','.']
  # push the container image to Container Registry
  - name: 'gcr.io/cloud-builders/docker'
    args: ['push', 'gcr.io/ind-coe/slbclock11-vishal:$COMMIT_SHA']
